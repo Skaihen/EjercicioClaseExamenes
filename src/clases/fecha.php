@@ -17,7 +17,7 @@ class fecha{
         $this->año = $año;
     }
 
-    public static function createHora(int $dia, int $mes, int $año){
+    public static function createFecha(int $dia, int $mes, int $año){
         return new fecha($dia, $mes, $año);
     }
 
