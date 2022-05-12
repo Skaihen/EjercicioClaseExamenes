@@ -37,6 +37,15 @@ class listadopreguntas{
         }
         return null;
     }
+
+    public function getPreguntaByDesc(string $frase): array{
+        foreach ($this->preguntas as $pregunta) {
+            if (strpos($pregunta->getDescripcion(), $frase) !== false){
+                $arrayPreguntas[] = $pregunta;
+            }
+         }
+         return $arrayPreguntas;
+    }
 }
 
 ?>
