@@ -8,7 +8,7 @@ class listadopreguntas{
     private static int $lastid=0;
 
     private function __construct(array $preguntas){
-        $this->preguntas = [];
+        $this->preguntas = $preguntas;
     }
 
     public function addCreatePregunta(int $IDPregunta, string $descripcion, int $notaMaxima){
@@ -29,6 +29,13 @@ class listadopreguntas{
             $total += $pregunta->getNotaMaxima();
         }
         return $total;
+    }
+
+    public function getPregunta(int $id): pregunta {
+        foreach ($this->preguntas as $pregunta) {
+           if ($pregunta->getIDPregunta() == $id) return $pregunta;
+        }
+        return null;
     }
 }
 

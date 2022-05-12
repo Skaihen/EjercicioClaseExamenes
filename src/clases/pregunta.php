@@ -13,7 +13,7 @@ class pregunta{
         $this->notaMaxima = $notaMaxima;
     }
 
-    public static function createPregunta(int $IDPregunta, string $descripcion, int $notaMaxima){
+    public static function createPregunta(int $IDPregunta, string $descripcion, int $notaMaxima=10){
         return new pregunta($IDPregunta, $descripcion, $notaMaxima);
     }
 
