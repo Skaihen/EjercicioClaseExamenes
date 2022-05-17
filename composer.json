@@ -9,13 +9,13 @@
     "autoload": {
         "psr-4": {
             "PHPUnit\\": "vendor/phpunit/phpunit/src/",
-            "DAW\\HTMLElementClass\\": "src/*"
+            "ITEC\\DAW\\examen\\": "src/*"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "PHPUnit\\": "vendor/phpunit/phpunit/src/",
-            "DAW\\HTMLElementClass\\": "src/*"
+            "ITEC\\DAW\\examen\\": "src/*"
         }
     }
 }
